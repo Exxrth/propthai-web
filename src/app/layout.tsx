@@ -6,8 +6,16 @@ import './globals.css'
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 
 export const metadata: Metadata = {
-  title: { default: 'อสังหาริมทรัพย์', template: '%s | อสังหาริมทรัพย์' },
-  description: 'ค้นหาบ้าน คอนโด ที่ดิน อสังหาริมทรัพย์ทั่วไทย',
+  title: { default: 'Resipacial — อสังหาริมทรัพย์คุณภาพ', template: '%s | Resipacial' },
+  description: 'Resipacial — ค้นหาบ้าน คอนโด ที่ดิน อสังหาริมทรัพย์คุณภาพทั่วประเทศไทย',
+  keywords: ['อสังหาริมทรัพย์', 'บ้าน', 'คอนโด', 'ที่ดิน', 'ซื้อบ้าน', 'เช่าบ้าน', 'Resipacial'],
+  openGraph: {
+    siteName: 'Resipacial',
+    title: 'Resipacial — อสังหาริมทรัพย์คุณภาพ',
+    description: 'ค้นหาบ้าน คอนโด ที่ดิน อสังหาริมทรัพย์คุณภาพทั่วประเทศไทย',
+    type: 'website',
+    locale: 'th_TH',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
