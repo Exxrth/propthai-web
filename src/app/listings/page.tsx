@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import PropertyCard from '@/components/properties/PropertyCard'
 import Navbar from '@/components/Navbar'
 import Link from 'next/link'
-import type { PropertyFilters } from '@/types/property'
+import type { Property, PropertyFilters } from '@/types/property'
 
 const PAGE_SIZE = 12
 
@@ -74,7 +74,7 @@ export default async function ListingsPage({ searchParams }: { searchParams: Pro
   const [{ count }, { data: properties, error }] = await Promise.all([
     applyFilters(supabase.from('properties').select('id', { count: 'exact', head: true })),
     dataQuery,
-  ])
+  ]) as [{ count: number | null }, { data: Property[] | null; error: any }]
 
   const totalCount  = count ?? 0
   const totalPages  = Math.max(1, Math.ceil(totalCount / PAGE_SIZE))
