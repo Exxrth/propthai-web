@@ -6,13 +6,13 @@ import './globals.css'
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 
 export const metadata: Metadata = {
-  title: { default: 'Resipacial — อสังหาริมทรัพย์คุณภาพ', template: '%s | Resipacial' },
-  description: 'Resipacial — ค้นหาบ้าน คอนโด ที่ดิน อสังหาริมทรัพย์คุณภาพทั่วประเทศไทย',
+  title: { default: 'Resipacial — Take a rest with your special place', template: '%s | Resipacial' },
+  description: 'Resipacial — Take a rest with your special place. ค้นหาบ้าน คอนโด ที่ดิน อสังหาริมทรัพย์คุณภาพทั่วประเทศไทย',
   keywords: ['อสังหาริมทรัพย์', 'บ้าน', 'คอนโด', 'ที่ดิน', 'ซื้อบ้าน', 'เช่าบ้าน', 'Resipacial'],
   openGraph: {
     siteName: 'Resipacial',
-    title: 'Resipacial — อสังหาริมทรัพย์คุณภาพ',
-    description: 'ค้นหาบ้าน คอนโด ที่ดิน อสังหาริมทรัพย์คุณภาพทั่วประเทศไทย',
+    title: 'Resipacial — 𝗧𝗮𝗸𝗲 𝗮 𝗿𝗲𝘀𝘁 𝘄𝗶𝘁𝗵 𝘆𝗼𝘂𝗿 𝘀𝗽𝗲𝗰𝗶𝗮𝗹 𝗽𝗹𝗮𝗰𝗲',
+    description: '𝗧𝗮𝗸𝗲 𝗮 𝗿𝗲𝘀𝘁 𝘄𝗶𝘁𝗵 𝘆𝗼𝘂𝗿 𝘀𝗽𝗲𝗰𝗶𝗮𝗹 𝗽𝗹𝗮𝗰𝗲 — ค้นหาบ้าน คอนโด ที่ดิน ทั่วประเทศไทย',
     type: 'website',
     locale: 'th_TH',
   },

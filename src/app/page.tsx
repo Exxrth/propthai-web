@@ -89,7 +89,7 @@ export default async function HomePage() {
         </section>
       </main>
       <footer className="bg-gray-800 text-gray-400 text-sm text-center py-6 mt-auto">
-        © 2026 Resipacial — อสังหาริมทรัพย์คุณภาพ
+        © 2026 Resipacial — 𝗧𝗮𝗸𝗲 𝗮 𝗿𝗲𝘀𝘁 𝘄𝗶𝘁𝗵 𝘆𝗼𝘂𝗿 𝘀𝗽𝗲𝗰𝗶𝗮𝗹 𝗽𝗹𝗮𝗰𝗲
       </footer>
     </>
   )
