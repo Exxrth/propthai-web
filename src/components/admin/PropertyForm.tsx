@@ -131,7 +131,28 @@ export default function PropertyForm({ property }: { property?: Property }) {
             <label className={label}>จังหวัด *</label>
             <input value={form.province} onChange={e => set('province', e.target.value)} required className={field} placeholder="เช่น กรุงเทพมหานคร" />
           </div>
+          <div>
+            <label className={label}>Latitude (พิกัดเหนือ-ใต้)</label>
+            <input type="number" step="any"
+              value={form.latitude ?? ''}
+              onChange={e => set('latitude', e.target.value ? Number(e.target.value) : null)}
+              className={field} placeholder="เช่น 13.736717" />
+          </div>
+          <div>
+            <label className={label}>Longitude (พิกัดออก-ตก)</label>
+            <input type="number" step="any"
+              value={form.longitude ?? ''}
+              onChange={e => set('longitude', e.target.value ? Number(e.target.value) : null)}
+              className={field} placeholder="เช่น 100.523186" />
+          </div>
         </div>
+        <p className="text-xs text-gray-400 mt-2">
+          💡 หาพิกัดได้จาก{' '}
+          <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:underline">
+            Google Maps
+          </a>
+          {' '}→ คลิกขวาที่ตำแหน่ง → คัดลอกตัวเลขค่ะ
+        </p>
       </section>
 
       {/* Images & Features */}
